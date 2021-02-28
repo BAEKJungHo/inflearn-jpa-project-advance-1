@@ -3,7 +3,7 @@
 # datasource setting
 spring:
   datasource:
-    url: jdbc:h2/tcp://localhost/~/jpashop;MVCC=TRUE
+    url: jdbc:h2:tcp://localhost/~/jpashop # H2 1.4.200 버전부터 MVCC(;MVCC=TRUE) 옵션이 제거되었다.
     username : sa
     password:
     driver-class-name: org.h2.Driver
@@ -20,4 +20,4 @@ spring:
 # log level
 logging:
   level:
-    org.hibernate.SQL : debug
+    org.hibernate.SQL : debug # logger 를 통해 hibernate 실행 SQL 을 남긴다.
