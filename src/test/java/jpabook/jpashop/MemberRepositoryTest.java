@@ -42,6 +42,8 @@ public class MemberRepositoryTest {
         // then
         Assertions.assertThat(findMember.getId()).isEqualTo(member.getId());
         Assertions.assertThat(findMember.getUsername()).isEqualTo(member.getUsername());
+        Assertions.assertThat(findMember).isEqualTo(member); // 같은 영속성 컨텍스트 내에 있기 때문에 true
+        System.out.println(findMember == member);
     }
 
 
