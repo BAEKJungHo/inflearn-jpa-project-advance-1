@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
 public class MemberRepositoryTest {
 
     @Autowired
-    MemberRepository memberRepository;
+//    MemberRepository memberRepository;
 
     /**
      * @Transactional 은 자바와 Spring 둘다 있는데 스프링을 사용하고 있으니 스프링으로 쓰는것을 권장
@@ -32,6 +32,7 @@ public class MemberRepositoryTest {
     @Transactional
     @Rollback(false)
     public void testMember() throws Exception {
+        /*
         // given
         Member member = new Member();
         member.setUsername("memberA");
@@ -45,6 +46,8 @@ public class MemberRepositoryTest {
         Assertions.assertThat(findMember.getUsername()).isEqualTo(member.getUsername());
         Assertions.assertThat(findMember).isEqualTo(member); // 같은 영속성 컨텍스트 내에 있기 때문에 true
         System.out.println(findMember == member);
+
+         */
     }
 
 
