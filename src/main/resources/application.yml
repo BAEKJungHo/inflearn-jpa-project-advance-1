@@ -20,4 +20,5 @@ spring:
 # log level
 logging:
   level:
-    org.hibernate.SQL : debug # logger 를 통해 hibernate 실행 SQL 을 남긴다.
+    org.hibernate.SQL: debug # logger 를 통해 hibernate 실행 SQL 을 남긴다.
+    org.hibernate.type: trace
