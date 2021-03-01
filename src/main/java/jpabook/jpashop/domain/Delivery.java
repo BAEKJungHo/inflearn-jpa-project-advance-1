@@ -28,6 +28,6 @@ public class Delivery {
      * 따라서 ORDINAL 은 절대 쓰면 안된다. 무조건 STRING 으로 써야 한다.
      */
     @Enumerated(EnumType.STRING)
-    private DeliveryStatus stauts; // READY(배송 준비), COMP(배송)
+    private DeliveryStatus status; // READY(배송 준비), COMP(배송)
 
 }
